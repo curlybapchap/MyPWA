@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My PWA</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#86B426" />
+    <link rel="manifest" href="./app.webmanifest">
+</head>
+
+<body>
+    <section id="app">
+        <main>
+        </main>
+    </section>
+</body>
+
+<script type="module" src="index.js"></script>
+<script type="module" src="appUpdate.js"></script>
+<script>
+    async function persistData() {
+        if (navigator.storage && navigator.storage.persist) {
+            const result = await navigator.storage.persist();
+        }
+    }
+</script>
+
+</html>
