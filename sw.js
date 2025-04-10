@@ -4,7 +4,7 @@ const FILE_CACHE_NAME = 'static-cache-v1';
 const CACHE_VERSION = "0.0.01";
 
 self.addEventListener('install', (evt) => {
-  alert("installing");
+  console.log("installing");
   self.skipWaiting();
   evt.waitUntil(
     caches.open(FILE_CACHE_NAME).then((cache) => {
