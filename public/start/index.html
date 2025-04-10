@@ -4,9 +4,9 @@
 <head>
     <title>My PWA</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#86B426" />
-    <link rel="manifest" href="./app.webmanifest">
+    <link rel="manifest" href="/app.webmanifest">
 </head>
 
 <body>
@@ -18,12 +18,12 @@
 
 <script type="module" src="index.js"></script>
 <script type="module" src="appUpdate.js"></script>
-<script>
+<!-- <script>
     async function persistData() {
         if (navigator.storage && navigator.storage.persist) {
             const result = await navigator.storage.persist();
         }
     }
-</script>
+</script> -->
 
 </html>

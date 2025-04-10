@@ -1,4 +1,4 @@
-import { FILES_TO_CACHE } from "swFilesCache.js";
+import { FILES_TO_CACHE } from "/swFilesCache.js";
 
 const FILE_CACHE_NAME = 'static-cache-v1';
 const CACHE_VERSION = "0.0.01";
