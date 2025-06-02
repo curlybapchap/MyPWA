@@ -6,24 +6,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#86B426" />
+    <meta name="description" content="The initial screen for this PWA">
     <link rel="manifest" href="/app.webmanifest?1">
 </head>
 
 <body>
     <section id="app">
         <main>
+            <h2>Progressive Web App</h2>
+            <section id="ButtonSection">
+                <a href="/public/appSettings/main.html">Settings</a>
+            </section>
         </main>
     </section>
 </body>
-
-<script type="module" src="index.js"></script>
-<script type="module" src="appUpdate.js"></script>
-<!-- <script>
-    async function persistData() {
-        if (navigator.storage && navigator.storage.persist) {
-            const result = await navigator.storage.persist();
-        }
-    }
-</script> -->
-
+<script type="module" src="/public/start/index.js"></script>
+<script type="module" src="/public/start/appUpdate.js"></script>
 </html>

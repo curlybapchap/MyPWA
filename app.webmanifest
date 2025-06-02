@@ -1,7 +1,7 @@
 {
     "name": "MyPWA",
     "short_name": "MyProgWebApp",
-    "start_url": "/index.html",
+  "start_url": "/",
     "display": "standalone",
     "background_color": "pink",
     "theme_color": "pink",
@@ -30,6 +30,12 @@
         "src": "../public/images/icons/maskable_icon_x192.png",
         "type": "image/png"
       },
+    {
+      "purpose": "any",
+      "sizes": "192x192",
+      "src": "../public/images/icons/maskable_icon_x192.png",
+      "type": "image/png"
+    },
       {
         "purpose": "maskable",
         "sizes": "512x512",
