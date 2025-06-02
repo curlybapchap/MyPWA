@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My PWA</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#86B426" />
+    <meta name="description" content="The second screen for this PWA">
+    <link rel="manifest" href="/app.webmanifest?1">
+</head>
+
+<body>
+    <h2>Application Settings</h2>
+    <hr />
+    <section id="ButtonSection">
+        <button type="button" onclick="RequestPersistStorage()">Persist Storage</button>
+        <button type="button" onclick="RequestNotifications()">Request Notifications</button>
+    </section>
+</body>
+
+<script src="/public/appSettings/storage.js"></script>
+<script>
+    async function RequestPersistStorage() {
+        await PersistData();
+    }
+</script>
+
+</html>
