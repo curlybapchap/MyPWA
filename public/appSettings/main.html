@@ -16,13 +16,25 @@
     <section id="ButtonSection">
         <button type="button" onclick="RequestPersistStorage()">Persist Storage</button>
         <button type="button" onclick="RequestNotifications()">Request Notifications</button>
+        <button type="button" onclick="RequestPushNotifications()">Request Push Notifications</button>
+        <button type="button" onclick="DeviceMediaAccess()">Request Media Access</button>
     </section>
 </body>
 
 <script src="/public/appSettings/storage.js"></script>
+<script src="/public/appSettings/pushNotifications.js"></script>
+<script src="/public/appSettings/mediaDevices.js"></script>
 <script>
     async function RequestPersistStorage() {
         await PersistData();
+    }
+
+    async function RequestPushNotifications() {
+        await RequestPushNoticationsPermission();
+    }
+
+    async function DeviceMediaAccess() {
+        await RequestMediaPermission();
     }
 </script>
 
