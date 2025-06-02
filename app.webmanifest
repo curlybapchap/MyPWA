@@ -1,46 +1,61 @@
 {
-    "name": "MyPWA",
-    "short_name": "MyProgWebApp",
+  "name": "MyPWA",
+  "short_name": "MyProgWebApp",
   "start_url": "/",
-    "display": "standalone",
-    "background_color": "pink",
-    "theme_color": "pink",
-    "icons":[
-      {
-        "purpose": "maskable",
-        "sizes": "48x48",
-        "src": "../public/images/icons/maskable_icon_x48.png",
-        "type": "image/png"
-      },
-      {
-        "purpose": "maskable",
-        "sizes": "96x96",
-        "src": "../public/images/icons/maskable_icon_x96.png",
-        "type": "image/png"
-      },
-      {
-        "purpose": "maskable",
-        "sizes": "128x128",
-        "src": "../public/images/icons/maskable_icon_x128.png",
-        "type": "image/png"
-      },
-      {
-        "purpose": "maskable",
-        "sizes": "192x192",
-        "src": "../public/images/icons/maskable_icon_x192.png",
-        "type": "image/png"
-      },
+  "display": "standalone",
+  "background_color": "pink",
+  "theme_color": "pink",
+  "shortcuts": [
+    {
+      "name": "App Settings",
+      "short_name": "App Settings",
+      "description": "Screen for adjusting application settings and requesting access from user to device.",
+      "url": "/public/appSettings/main.html",
+      "icons": [
+        {
+          "src": "../public/images/icons/maskable_icon_x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "48x48",
+      "src": "../public/images/icons/maskable_icon_x48.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "96x96",
+      "src": "../public/images/icons/maskable_icon_x96.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "128x128",
+      "src": "../public/images/icons/maskable_icon_x128.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "192x192",
+      "src": "../public/images/icons/maskable_icon_x192.png",
+      "type": "image/png"
+    },
     {
       "purpose": "any",
       "sizes": "192x192",
       "src": "../public/images/icons/maskable_icon_x192.png",
       "type": "image/png"
     },
-      {
-        "purpose": "maskable",
-        "sizes": "512x512",
-        "src": "../public/images/icons/maskable_icon_x512.png",
-        "type": "image/png"
-      }
-    ]
-  }
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "../public/images/icons/maskable_icon_x512.png",
+      "type": "image/png"
+    }
+  ]
+}
