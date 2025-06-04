@@ -18,13 +18,26 @@
         <button type="button" onclick="RequestNotifications()">Request Notifications</button>
         <button type="button" onclick="RequestPushNotifications()">Request Push Notifications</button>
         <button type="button" onclick="DeviceMediaAccess()">Request Media Access</button>
+        <button type="button" onclick="ListRegisteredSyncTags()">List Background Syncs</button>
+        <input type="text" onchange="BackgroundSyncAccess(this.value)">Register New Background Sync</button>
     </section>
+
+    <p class="available">Periodic background sync can be used. Install the app first.</p>
+    <p class="not-available">Periodic background sync cannot be used.</p>
+    <h2>Last updated</h2>
+    <p class="last-updated">Never</p>
+    <h2>Registered tags</h2>
+    <ul>
+      <li>None yet.</li>
+    </ul>
+
 </body>
 
 <script src="/public/appSettings/storage.js"></script>
 <script src="/public/appSettings/notifications.js"></script>
 <script src="/public/appSettings/pushNotifications.js"></script>
 <script src="/public/appSettings/mediaDevices.js"></script>
+<script src="/public/appSettings/periodicBackgroundSync.js"></script>
 <script>
     async function RequestPersistStorage() {
         await PersistData();
@@ -36,6 +49,10 @@
 
     async function DeviceMediaAccess() {
         await RequestMediaPermission();
+    }
+
+    async function BackgroundSyncAccess(syncName) {
+        await RegisterPeriodicBackgroundSync(syncName);
     }
 </script>
 
