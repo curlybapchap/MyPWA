@@ -18,7 +18,7 @@ self.addEventListener('activate', (evt) => {
   evt.waitUntil(
     caches.keys().then((keyList) => {
       return Promise.all(keyList.map((key) => {
-        if (key !== FILE_CACHE_NAME && key !== DATA_CACHE_NAME) {
+        if (key !== FILE_CACHE_NAME) {
           return caches.delete(key);
         }
       }));
