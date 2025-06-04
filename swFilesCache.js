@@ -1,6 +1,7 @@
 export var FILES_TO_CACHE = [
+    '/',
+    '/index.html',
     '/app.webmanifest',
-    '/public/start/index.html',
-    '/public/start/appUpdate.js',
-    '/public/start/index.js'
+    '/public/home/appUpdate.js',
+    '/public/home/index.js'
   ];

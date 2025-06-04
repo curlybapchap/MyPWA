@@ -1,3 +1,3 @@
 window.addEventListener('load', (event) => {
-    window.alert("load");
+    // window.alert("load");
 });
