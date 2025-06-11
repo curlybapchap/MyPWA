@@ -18,6 +18,8 @@
         <button type="button" onclick="RequestNotifications()">Request Notifications</button>
         <button type="button" onclick="RequestPushNotifications()">Request Push Notifications</button>
         <button type="button" onclick="DeviceMediaAccess()">Request Media Access</button>
+        <button type="button" id="DeviceMotionAccess">Request Motion Access</button>
+        <button type="button" onclick="DeviceOreientationAccess()">Request Oreientation Access</button>
         <button type="button" onclick="ListRegisteredSyncTags()">List Background Syncs</button>
         <button type="button" id="ReqLocationAccess">Request Location Access</button>
         <input type="text" onchange="BackgroundSyncAccess(this.value)">Register New Background Sync</button>
@@ -39,9 +41,12 @@
 <script src="/public/appSettings/pushNotifications.js"></script>
 <script src="/public/appSettings/mediaDevices.js"></script>
 <script src="/public/appSettings/periodicBackgroundSync.js"></script>
+
 <script type="module">
     import * as Location from './geoLocation.js';
+    import * as Motion from './motion.js';
     document.getElementById("ReqLocationAccess").addEventListener("click", () => Location.RequestPermission());
+    document.getElementById("DeviceMotionAccess").addEventListener("click", () => Motion.RequestPermission());
 </script>
 <script>
     async function RequestPersistStorage() {
